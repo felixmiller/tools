@@ -37,7 +37,7 @@
 #define ENCODER_B 4		// GPIO 23
 #define ENCODER_A 5		// GPIO 24
 
-#define STEP_SIZE 1
+#define STEP_SIZE 2
 
 #define TRUE	1
 #define FALSE	0
