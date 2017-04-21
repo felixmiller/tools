@@ -139,7 +139,7 @@ int main(int argc, char * argv[])
 	      if (encoderPos > pos)
 	      {
 		         pos = encoderPos;
-			 currentVolume = currentVolume + 10;
+			 currentVolume = currentVolume + STEP_SIZE;
 			 // Adjust for MAX volume
 			 if (currentVolume > max) currentVolume = max;
 		         if (DEBUG_PRINT) printf("Volume UP %d - %ld", pos, currentVolume);
@@ -147,7 +147,7 @@ int main(int argc, char * argv[])
 	      else if (encoderPos < pos)
 	      {
 		         pos = encoderPos;
-                         currentVolume = currentVolume - 10;
+                         currentVolume = currentVolume - STEP_SIZE;
  
 			 // Adjust for MUTE
 			 if (currentVolume < min) currentVolume = 0;
