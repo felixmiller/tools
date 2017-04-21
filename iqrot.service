@@ -1,0 +1,10 @@
+[Unit]
+Description=Rotary Encoder Volume Control
+After=syslog.target
+
+[Service]
+Type=Simple
+ExecStart=/home/volumio/dev/tools/IQ_rot
+
+[Install]
+WantedBy=multi-user.target
