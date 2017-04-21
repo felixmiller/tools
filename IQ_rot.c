@@ -31,11 +31,13 @@
 
 
 // Define DEBUG_PRINT TRUE for output
-#define DEBUG_PRINT 0		// 1 debug messages, 0 none
+#define DEBUG_PRINT 1		// 1 debug messages, 0 none
 
 // Define the Raspberry Pi IO Pins being used
-#define ENCODER_A 4		// GPIO 23
-#define ENCODER_B 5		// GPIO 24
+#define ENCODER_B 4		// GPIO 23
+#define ENCODER_A 5		// GPIO 24
+
+#define STEP_SIZE 1
 
 #define TRUE	1
 #define FALSE	0
